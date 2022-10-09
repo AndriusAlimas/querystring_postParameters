@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <%- include("header"); -%>
+
+  <body>
+    <h1>Welcome to my page</h1>
+    <h2>This is my JSON object: <%= JSON.stringify(OBJ) %></h2>
+    <div class="d-flex justify-content-center mt-5">
+      <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td><%=OBJ.name %></td>
+          <td><%=OBJ.age %></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

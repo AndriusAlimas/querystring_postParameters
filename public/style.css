@@ -1,0 +1,30 @@
+body{
+    background-color: cornflowerblue;
+}
+td{
+  
+    padding: 2rem;
+}
+th{
+    padding: 3rem;
+    background-color:lemonchiffon;
+    
+}
+td{
+    background-color: rgb(163, 202, 202);
+}
+p{
+    font-size: 1.2em;
+    color: yellow;
+}
+.register{
+    border: 1px solid black;
+}
+label{
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+input{
+    padding: 1rem;
+    font-size: 1.2rem;
+}

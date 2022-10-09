@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <%- include("header"); -%>
+
+  <body>
+    <h1>Welcome to my page</h1>
+    <form method="post" action="/register">
+      <h2 class="w-100">Enter Registration Details:</h2>
+      <br />
+      <div class="d-flex flex-column justify-content-center register">
+        <div class="d-flex justify-content-center m-3">
+          <label for="username">User Name: </label>
+          <input type="text" id="username" name="name" /><br />
+        </div>
+        <div class="d-flex justify-content-center m-3">
+          <label for="password">Password: </label>
+          <input type="password" id="password" name="pw" /><br />
+        </div>
+        <div class="d-flex justify-content-center">
+          <input type="submit" class="w-50 m-3" />
+        </div>
+      </div>
+    </form>
+    <hr />
+    <h3>
+      To see JSON data simply press button, this will run function ajax function
+    </h3>
+    <button onclick="jsonRequest()">Press Me</button>
+    <script>
+      function jsonRequest() {
+        $.ajax({
+          type: "POST",
+          url: "/registerjson",
+          data: JSON.stringify({ name: "Jane", pw: "safasfsa" }),
+          dataType: "json",
+          contentType: "application/json",
+        });
+      }
+    </script>
+  </body>
+</html>
